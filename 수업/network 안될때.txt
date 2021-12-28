@@ -1,0 +1,10 @@
+vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
+
+BOOTPROTO="dhcp" 로 바꾸고
+IPADDR 주석
+netmask 주석
+게이트웨이 주석
+dns1 주석
+dns2 주석
+
+systemctl restart network
