@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member">
+    <select id="checkEmail" resultType="member" parameterType="string">
+        <![CDATA[
+            select email
+            from member
+            where email = #{email}
+		]]>
+    </select>
+
+    <select id="getUpdateUser" resultType="member" parameterType="long">
+        <![CDATA[
+            select name,avatar
+            from member
+            where member_id = #{id}
+		]]>
+    </select>
+
+    <select id="findMemberEmail" resultType="member" parameterType="map">
+        <![CDATA[
+            select email
+            from member
+            where name = #{name}
+            and phone = #{phone}
+		]]>
+    </select>
+
+</mapper>

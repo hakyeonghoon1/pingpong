@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="team">
+
+    <insert id="inviteMember" parameterType="map">
+        <![CDATA[
+			insert into team_member values (null,#{teamId},#{userId},'N')
+		]]>
+    </insert>
+    <select id="findUser" resultType="map" parameterType="map">
+        <![CDATA[
+            select x.member_id, x.email, x.name, x.phone, x.status, x.avatar, x.company
+            from member x
+            where x.member_id not in (
+            select a.member_id
+            from member a, team_member b
+            where a.member_id = b.member_id
+            and b.team_id = #{teamId}
+            )
+            and x.name like concat('%',#{userName},'%')
+		]]>
+    </select>
+
+    <delete id="exitTeam" parameterType="map">
+        <![CDATA[
+            delete from team_member where member_id = ${memberId} and team_id =#{teamId}
+		]]>
+    </delete>
+
+    <select id="getTeamInfo" resultType="map" parameterType="long">
+        <![CDATA[
+            select team_id, name, date, host
+            from team
+            where team_id = #{teamId}
+		]]>
+    </select>
+
+    <select id="getTeamList" resultType="map" parameterType="long">
+        <![CDATA[
+            select a.team_id, b.name, b.host, r.room_id
+            from team_member a, team b, room r
+            where a.team_id = b. team_id
+            and a.member_id =#{memberId}
+            and r.team_id = b.team_id
+            and r.room_id = (select min(dd.room_id) from room dd where dd.team_id = b.team_id)
+            and a.include = 'Y'
+		]]>
+    </select>
+
+    <select id="findRoom" resultType="long" parameterType="long">
+        <![CDATA[
+            select room_id from room
+            where team_id = #{teamId}
+            order by room_id asc
+            limit 1;
+		]]>
+    </select>
+
+    <update id="acceptTeam" parameterType="map">
+        <![CDATA[
+            update team_member
+            set include = 'Y'
+            where member_id = #{memberId}
+            and team_id = #{teamId}
+		]]>
+    </update>
+
+    <delete id="rejectTeam" parameterType="map">
+        <![CDATA[
+            delete from team_member where member_id = ${memberId} and team_id =#{teamId}
+		]]>
+    </delete>
+</mapper>
