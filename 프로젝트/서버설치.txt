@@ -1,6 +1,0 @@
-1. mariaDB
-2. java
-3. tomcat
-4. jenkins
-5. maven
-6. git
