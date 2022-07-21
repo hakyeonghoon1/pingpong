@@ -27,7 +27,7 @@
 
 ## 3. ERD 설계
 
-erd 이미지
+ ![](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/ERD.png)
 
 
 ## 4. 핵심 기능
