@@ -38,7 +38,8 @@
 <details>
 <summary><b>핵심 기능 설명 펼치기</b></summary>
 <div markdown="1">
-
+4.1 채팅방 websocket 연결
+ ![]([https://github.com/hakyeonghoon1/pingpong/blob/main/docs/ERD.png](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/%ED%95%B5%EC%8B%AC%EA%B8%B0%EC%88%A0%EC%B1%84%ED%8C%85.png))
 
 </div>
 </details>
