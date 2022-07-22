@@ -46,11 +46,16 @@
  [주요코드확인](https://github.com/hakyeonghoon1/pingpong-frontend/blob/main/frontend/src/component/Chat/Chat.js#L78)
  - 채팅방 클릭시 웹소켓을 연결합니다.
 
- ### 4.2 초대장 전송
+ ### 4.2 초대장 전송(팀원 초대)
  
  ![](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/%EC%B4%88%EB%8C%80%EC%9E%A5%20%EC%A0%84%EC%86%A1.png)
 [주요코드확인](https://github.com/hakyeonghoon1/pingpong/blob/main/src/main/java/com/douzone/pingpong/controller/api/ApiInviteController.java#L20)
  - 팀원 초대시 해당 팀의 아이디로 해당 멤버를 초대합니다.
+ 
+### 4.3 채팅
+![](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/%EC%B1%84%ED%8C%85.png)
+[주요코드확인](https://github.com/hakyeonghoon1/pingpong-frontend/blob/main/frontend/src/component/Chat/Chat.js#L157)
+ - 채팅 입력시 publish하여 채팅을 전송
  
  
 </div>
@@ -58,8 +63,15 @@
 
 </br>
 
-## 5. 핵심 트러블 슈팅
-### 5.1. 내용 1
+## 5. 트러블 슈팅
+
+### 5.1. 웹소켓 연결 방법 정하기
+- 웹소켓을 하나만 열어놓고 여러개의 대화방을 통신하려하다보니 웹소켓이 열린 상태에서 너무 많은 데이터가 전송됨
+- 해결방법 : 채팅방을 이동할 때마다 웹소켓을 열고 닫는 방법을 채택하였습니다.
+
+### 5.2. 1:1 대화방 이름 생성문제
+- 1:1 대화방 생성시 상대방에게는 내 이름이, 나에게는 상대방의 이름이 나타나게 하기가 어려웠습니다.
+- 해결방법 : 대화방 생성시 DB에 (본인이름)/(상대방이름)을 저장해 두고, 프론트 엔드 영역에서 로그인한 이름과 다른 이름을 표시하도록하여 해결하였습니다.
 
 
 </br>
