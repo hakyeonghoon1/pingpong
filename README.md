@@ -57,6 +57,8 @@
 [주요코드확인](https://github.com/hakyeonghoon1/pingpong-frontend/blob/main/frontend/src/component/Chat/Chat.js#L157)
  - 채팅 입력시 publish하여 채팅을 전송
  
+### 4.4 게시판 및 댓글을 활용한 의견공유 
+
  
 </div>
 </details>
@@ -81,3 +83,8 @@
 
 ## 6. 회고 / 느낀점
 >
+- UI를 반응형으로 제작하지 못한것에 아쉬움이 있습니다.
+- 서버를 클라우드에 올리지 못하고 로컬에서 작업을 진행한 부분의 아쉬움이 있습니다.
+- 해당 프로젝트를 통해 팀원들과 협업하는 방법을 깨달았습니다.
+- 웹소켓에 대한 이해도를 향상할 수 있었습니다.
+
