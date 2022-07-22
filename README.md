@@ -38,10 +38,11 @@
 <details>
 <summary><b>핵심 기능 설명 펼치기</b></summary>
 <div markdown="1">
-###4.1 채팅방 websocket 연결
+### 4.1 채팅방 websocket 연결
  
- ![](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/ERD.png)
  ![](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/핵심기술채팅.png)
+ [주요코드확인](https://github.com/hakyeonghoon1/pingpong-frontend/blob/main/frontend/src/component/Chat/Chat.js)
+ 채팅방 클릭시 웹소켓을 연결합니다.
 
 </div>
 </details>
