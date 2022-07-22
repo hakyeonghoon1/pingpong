@@ -52,6 +52,11 @@
 [주요코드확인](https://github.com/hakyeonghoon1/pingpong/blob/main/src/main/java/com/douzone/pingpong/controller/api/ApiInviteController.java#L20)
  - 팀원 초대시 해당 팀의 아이디로 해당 멤버를 초대합니다.
  
+### 4.3 채팅
+![](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/%EC%B1%84%ED%8C%85.png)
+[주요코드확인](https://github.com/hakyeonghoon1/pingpong-frontend/blob/main/frontend/src/component/Chat/Chat.js#L157)
+ - 채팅 입력시 publish하여 채팅을 전송
+ 
  
 </div>
 </details>
