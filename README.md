@@ -38,8 +38,20 @@
 <details>
 <summary><b>핵심 기능 설명 펼치기</b></summary>
 <div markdown="1">
+ 
+### 4.1 채팅방 websocket 연결
+ 
+ ![](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/핵심기술채팅.png)
+ [주요코드확인](https://github.com/hakyeonghoon1/pingpong-frontend/blob/main/frontend/src/component/Chat/Chat.js#L78)
+ - 채팅방 클릭시 웹소켓을 연결합니다.
 
-
+ ### 4.2 초대장 전송
+ 
+ ![](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/%EC%B4%88%EB%8C%80%EC%9E%A5%20%EC%A0%84%EC%86%A1.png)
+[주요코드확인](https://github.com/hakyeonghoon1/pingpong/blob/main/src/main/java/com/douzone/pingpong/controller/api/ApiInviteController.java#L20)
+ - 팀원 초대시 해당 팀의 아이디로 해당 멤버를 초대합니다.
+ 
+ 
 </div>
 </details>
 
