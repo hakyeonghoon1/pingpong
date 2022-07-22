@@ -58,7 +58,8 @@
  - 채팅 입력시 publish하여 채팅을 전송
  
 ### 4.4 게시판 및 댓글을 활용한 의견공유 
-
+![](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/%EA%B2%8C%EC%8B%9C%ED%8C%90.png)
+- 해당 게시물 클릭시 우측에 각 게시물의 댓글 리스트가 나타남
  
 </div>
 </details>
