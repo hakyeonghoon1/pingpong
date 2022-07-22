@@ -34,7 +34,8 @@
 이 서비스의 핵심 기능은 채팅 & 게시판 기능입니다.  
 팀 단위 워크스페이스를 옮겨 다니며 채팅 및 게시판을 사용할 수 있습니다.  
 팀원을 추가할 때는 초대 기능을 사용하여 팀원을 초대합니다.
-[전체 주요기능 바로보기](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/%EC%A3%BC%EC%9A%94%EA%B8%B0%EB%8A%A5.pdf)
+
+[주요기능 바로보기](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/%EC%A3%BC%EC%9A%94%EA%B8%B0%EB%8A%A5.pdf)
 
 <details>
 <summary><b>핵심 기능 설명 펼치기</b></summary>
