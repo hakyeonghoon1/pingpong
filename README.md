@@ -51,7 +51,8 @@
  ### 4.2 초대장 전송(팀원 초대)
  
  ![](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/%EC%B4%88%EB%8C%80%EC%9E%A5%20%EC%A0%84%EC%86%A1.png)
-[주요코드확인](https://github.com/hakyeonghoon1/pingpong/blob/main/src/main/java/com/douzone/pingpong/controller/api/ApiInviteController.java#L20)
+[주요코드확인1](https://github.com/hakyeonghoon1/pingpong/blob/main/src/main/java/com/douzone/pingpong/controller/api/ApiInviteController.java#L20)
+[주요코드확인2](https://github.com/hakyeonghoon1/pingpong-frontend/blob/main/frontend/src/component/Main/InvitationList.js#L47)
  - 팀원 초대시 해당 팀의 아이디로 해당 멤버를 초대합니다.
  
 ### 4.3 채팅
