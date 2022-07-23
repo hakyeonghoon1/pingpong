@@ -47,6 +47,7 @@
  ![](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/핵심기술채팅.png)
  [주요코드확인](https://github.com/hakyeonghoon1/pingpong-frontend/blob/main/frontend/src/component/Chat/Chat.js#L78)
  - 채팅방 클릭시 웹소켓을 연결합니다.
+ - 다른 채팅방 클릭시 기존의 웹소켓의 연결을 끊고, 새로운 연결을 요청합니다.
 
  ### 4.2 초대장 전송(팀원 초대)
  
@@ -54,6 +55,7 @@
 [주요코드확인1](https://github.com/hakyeonghoon1/pingpong/blob/main/src/main/java/com/douzone/pingpong/controller/api/ApiInviteController.java#L20)
 [주요코드확인2](https://github.com/hakyeonghoon1/pingpong-frontend/blob/main/frontend/src/component/Main/InvitationList.js#L47)
  - 팀원 초대시 해당 팀의 아이디로 해당 멤버를 초대합니다.
+ - 클라이언트 자신의 아이디로된 topic을 subscribe하고 있습니다.
  
 ### 4.3 채팅
 ![](https://github.com/hakyeonghoon1/pingpong/blob/main/docs/%EC%B1%84%ED%8C%85.png)
