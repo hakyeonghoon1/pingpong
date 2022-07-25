@@ -47,6 +47,7 @@
  [주요코드확인](https://github.com/hakyeonghoon1/pingpong-frontend/blob/main/frontend/src/component/Chat/Chat.js#L78)
  - 채팅방 클릭시 웹소켓을 연결합니다.
  - 다른 채팅방 클릭시 기존의 웹소켓의 연결을 끊고, 새로운 연결을 요청합니다.
+ - 위의 방법을 선택한 이유 : 웹소켓을 하나만 연결해두고 채팅을 구현하려하니 채팅방을 들어가지 않아도 데이터 전송량이 많아져 이 문제를 해결하기 위함
 
  ### 4.2 초대장 전송(팀원 초대)
  
