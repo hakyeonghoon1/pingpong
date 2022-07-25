@@ -19,8 +19,7 @@ public class ApiInviteController {
 
     @RequestMapping(value="/wsInvite/{teamId}/{receiver}")
     public void wsInvite(@Login Member loginMember, @PathVariable("teamId") Long teamId, @PathVariable("receiver") Long receiver){
-
-        System.out.println("teamId"+teamId);
+        
         webSocket.convertAndSend("/sub/"+receiver,teamId);
     }
 }
