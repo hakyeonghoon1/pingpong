@@ -17,9 +17,17 @@ public class ApiInviteController {
     @Autowired
     private SimpMessagingTemplate webSocket;
 
+    /**
+     *
+     * @param loginMember
+     * @param teamId
+     * @param receiver
+     *
+     * 팀원 초대 초대장 전송
+     */
     @RequestMapping(value="/wsInvite/{teamId}/{receiver}")
     public void wsInvite(@Login Member loginMember, @PathVariable("teamId") Long teamId, @PathVariable("receiver") Long receiver){
-        
+
         webSocket.convertAndSend("/sub/"+receiver,teamId);
     }
 }
