@@ -1,6 +1,6 @@
 # :pushpin: pingpong
 >사내 협업 채팅 웹 애플리케이션  
->목적 : Websocket, React.js, Spring의 숙련도 향상
+>목표 : Websocket, React.js, Spring의 숙련도 향상
 </br>
 
 ## 1. 제작 기간 & 참여 인원
